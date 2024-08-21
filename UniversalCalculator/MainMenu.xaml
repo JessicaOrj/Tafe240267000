@@ -11,12 +11,15 @@
 
     <Grid>
 		<StackPanel Background="#FFFFEFD8">
-			<TextBlock FontSize="60" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue" Margin="50">Universal Calculator</TextBlock>
-			<Button x:Name="mathCalculatorButton" Width="500" Height="180" Content="Maths Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="mathsCalculatorButton_Click"/>
-			<Button x:Name="mortgageCalculatorButton" Width="500" Height="180" Content="Mortgage Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="mortgageCalculatorButton_Click"/>
-			<Button x:Name="currencyConverterButton" Width="500" Height="180" Content="Currency Converter" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="currencyConverterButton_Click"></Button>
-			<Button x:Name="exitButton" Width="500" Height="180" Content="Exit" HorizontalAlignment="Center" FontSize="50"  Padding="5" Margin="10" Click="exitButton_Click"></Button>
-			<Image Source="/images/abacus.png" Width="500" Margin="10"></Image>
+			<StackPanel Orientation="Horizontal" Margin="20">
+				<TextBlock FontSize="60" FontWeight="Bold" Foreground="Blue" Margin="400,50,50,50">Universal Calculator</TextBlock>
+				<Image Source="/Images/abacus.png" Width="200"></Image>
+			</StackPanel>
+			
+			<Button x:Name="mathCalculatorButton" Width="500" Height="170" Content="Maths Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="mathsCalculatorButton_Click"/>
+			<Button x:Name="mortgageCalculatorButton" Width="500" Height="170" Content="Mortgage Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="mortgageCalculatorButton_Click"/>
+			<Button x:Name="currencyConverterButton" Width="500" Height="170" Content="Currency Converter" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="currencyConverterButton_Click"></Button>
+			<Button x:Name="exitButton" Width="500" Height="170" Content="Exit" HorizontalAlignment="Center" FontSize="50"  Padding="5" Margin="10" Click="exitButton_Click"></Button>
 		</StackPanel>
 	</Grid>
 </Page>

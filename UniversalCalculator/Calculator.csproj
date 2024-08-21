@@ -141,6 +141,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\abacus.PNG" />
+    <Content Include="Images\EUR1.PNG" />
+    <Content Include="Images\India1.PNG" />
+    <Content Include="Images\UK1.PNG" />
+    <Content Include="Images\USA1.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
