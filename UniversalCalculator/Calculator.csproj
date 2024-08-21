@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Utils.cs" />
     <None Include=".editorconfig" />
     <Compile Include="Controls\NumberButtonControl.xaml.cs">
@@ -155,6 +158,10 @@
     <Page Include="Controls\NumberButtonControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\NumberButtonControl.Resources.xaml">
       <SubType>Designer</SubType>
