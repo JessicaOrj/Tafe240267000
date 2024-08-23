@@ -16,10 +16,10 @@
 				<Image Source="/Images/abacus.png" Width="200"></Image>
 			</StackPanel>
 
-			<Button x:Name="mathCalculatorButton" Width="500" Height="100" Foreground="Black" Background="LightGray" Content="Maths Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10"/>
-			<Button x:Name="mortgageCalculatorButton" Width="500" Height="100" Foreground="Black" Background="LightGray" Content="Mortgage Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" />
-			<Button x:Name="currencyConverterButton" Width="500" Height="100" Foreground="Black" Background="LightGray" Content="Currency Converter" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10"></Button>
-			<Button x:Name="exitButton" Width="500" Height="100" Content="Exit" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" FontSize="50"  Padding="5" Margin="10"></Button>
+			<Button x:Name="mathCalculatorButton" Width="500" Height="100" Foreground="Black" Background="LightGray" Content="Maths Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="mathCalculatorButton_Click"/>
+			<Button x:Name="mortgageCalculatorButton" Width="500" Height="100" Foreground="Black" Background="LightGray" Content="Mortgage Calculator" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="mortgageCalculatorButton_Click" />
+			<Button x:Name="currencyConverterButton" Width="500" Height="100" Foreground="Black" Background="LightGray" Content="Currency Converter" HorizontalAlignment="Center" FontSize="50" Padding="5" Margin="10" Click="currencyConverterButton_Click"></Button>
+			<Button x:Name="exitButton" Width="500" Height="100" Content="Exit" Foreground="Black" Background="LightGray" HorizontalAlignment="Center" FontSize="50"  Padding="5" Margin="10" Click="exitButton_Click"></Button>
 		</StackPanel>
 	</Grid>
 </Page>
