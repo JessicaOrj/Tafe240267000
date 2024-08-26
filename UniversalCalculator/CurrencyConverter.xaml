@@ -9,7 +9,39 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+	<Grid Background="LightBlue">
+		<StackPanel>
+			<TextBlock FontSize="50" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black" Padding="5" Margin="10">Currency Conversion Calculator</TextBlock>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<StackPanel Width="300">
+					<TextBlock FontSize="50"  Margin="10" Foreground="Black">Amount $</TextBlock>
+					<TextBox x:Name="amountTextBox" PlaceholderText="Enter Amount" Height="50" FontSize="30" Width="300" Background="DodgerBlue"></TextBox>
+				</StackPanel>
+				<StackPanel Width="300">
+					<TextBlock FontSize="50" Margin="10" Foreground="Black">From</TextBlock>
+					<ComboBox x:Name="convertFromComboBox" PlaceholderText="Convert From" Height="50" FontSize="30" Width="300" Background="DodgerBlue">
+						<ComboBoxItem IsSelected="True">US Dollar</ComboBoxItem>
+						<ComboBoxItem>Euro</ComboBoxItem>
+						<ComboBoxItem>British Pound</ComboBoxItem>
+						<ComboBoxItem>Indian Rupee</ComboBoxItem>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Width="300">
+					<TextBlock FontSize="50" Margin="10" Foreground="Black">To</TextBlock>
+					<ComboBox x:Name="convertToComboBox" PlaceholderText="Convert To" Height="50" FontSize="30" Width="300" Background="DodgerBlue">
+						<ComboBoxItem IsSelected="True">US Dollar</ComboBoxItem>
+						<ComboBoxItem>Euro</ComboBoxItem>
+						<ComboBoxItem>British Pound</ComboBoxItem>
+						<ComboBoxItem>Indian Rupee</ComboBoxItem>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<TextBlock x:Name="amountTextBlock" FontSize="30" Padding="5" Margin="10" ></TextBlock>
+			<TextBlock x:Name="convertedAmountTextBlock" FontSize="40" Padding="5" Margin="10"></TextBlock>
+			<TextBlock x:Name="fromRateTextBlock" FontSize="30" Padding="5" Margin="10" ></TextBlock>
+			<TextBlock x:Name="toRateTextBlock" FontSize="30" Padding="5" Margin="10"></TextBlock>
+			<Button x:Name="currencyConversionButton" Content="Currency Conversion" Height="70" Width="600" FontSize="40" HorizontalAlignment="Center" Padding="5" Margin="10" Background="DarkBlue" Click="currencyConversionButton_Click"></Button>
+			<Button x:Name="exitButton" Content="Exit" Height="70" Width="600" FontSize="40" HorizontalAlignment="Center" Padding="5" Margin="10" Background="DarkBlue" Click="exitButton_Click" ></Button>
+		</StackPanel>
+	</Grid>
 </Page>
